@@ -24,6 +24,10 @@ jobs:
     - name: Install Python requirements
       run: pip install --upgrade --upgrade-strategy eager .
 
+    - name: Install fontTools
+      run: |
+        pip install fonttools
+
     - name: Install pytest
       run: |
         pip install pytest
